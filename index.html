@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamerCentral - Your Gaming Universe</title>
-    <style>
+        <style>
+        /* basic setup */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lucida Console', Courier, monospace;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background: linear-gradient(135deg, #091236, #1E215D);
+            color: #fff;
         }
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
         }
         header, footer {
             background-color: #333;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -33,12 +41,39 @@
         nav a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
         .content-section {
             margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            font-family: 'Arial', sans-serif;
+            color: #FFD700; /* gold */
         }
         h2 {
-            color: #333;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 10px;
+        }
+
+        /* adding some fancy effects */
+        a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+        footer {
+            font-size: 1.2em;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        /* adding gradient backgrounds to sections */
+        .content-section:nth-child(odd) {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+
+        .content-section:nth-child(even) {
+            background: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%);
         }
     </style>
 </head>
