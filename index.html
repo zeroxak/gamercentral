@@ -44,40 +44,18 @@ nav a {
     font-weight: bold;
 }
 .content-section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 40px;
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 5px;
 }
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-    color: #FFD700; /* gold */
+.content-section h2 {
+    align-self: flex-start;
+    margin-bottom: 20px; /* Adjust spacing between the title and the grid */
 }
-h2 {
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
-}
-
-/* adding some fancy effects */
-a:hover {
-    color: #FFD700;
-    text-decoration: underline;
-}
-footer {
-    font-size: 1.2em;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-}
-/* adding gradient backgrounds to sections */
-.content-section:nth-child(odd) {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-}
-
-.content-section:nth-child(even) {
-    background: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%);
-}
-
-/* article cards styling */
-#feature-articles {
+.article-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -107,16 +85,6 @@ footer {
     z-index: 1;
     color: #FFD700; /* To ensure readability */
 }
-/* Background images for articles - replace 'your_image_url_here' with actual image URLs */
-.article:nth-child(1) { background-image: url('your_image_url_here'); }
-.article:nth-child(2) { background-image: url('your_image_url_here'); }
-.article:nth-child(3) { background-image: url('your_image_url_here'); }
-.article:nth-child(4) { background-image: url('your_image_url_here'); }
-.article:nth-child(5) { background-image: url('your_image_url_here'); }
-.article:nth-child(6) { background-image: url('your_image_url_here'); }
-.article:nth-child(7) { background-image: url('your_image_url_here'); }
-.article:nth-child(8) { background-image: url('your_image_url_here'); }
-.article:nth-child(9) { background-image: url('your_image_url_here'); }
 
     </style>
 </head>
@@ -147,16 +115,18 @@ footer {
         <!-- feature articles -->
         <section id="feature-articles" class="content-section">
             <h2>Feature Articles</h2>
-            <!-- article previews go here -->
-            <div class="article"><h3>Eclipse Blocks High Score Screen</h3></div>
-            <div class="article"><h3>Trump's Hidden Bible Codes in Games</h3></div>
-            <div class="article"><h3>Biden's Cheat Codes for Economy</h3></div>
-            <div class="article"><h3>AFK Players Beware: God's Inactivity Purge</h3></div>
-            <div class="article"><h3>Tall NPC Obstructs Main Quest View</h3></div>
-            <div class="article"><h3>Gamer's Girlfriend Inquires About Dark Lore</h3></div>
-            <div class="article"><h3>Local Wizard Claims Dementia</h3></div>
-            <div class="article"><h3>Romance Quest Fail: No Dragon Slaying</h3></div>
-            <div class="article"><h3>The Quest for The Ultimate Pizza Slice</h3></div>
+            <div class="article-grid">
+                <!-- article previews go here -->
+                <div class="article"><h3>Eclipse Blocks High Score Screen</h3></div>
+                <div class="article"><h3>Trump's Hidden Bible Codes in Games</h3></div>
+                <div class="article"><h3>Biden's Cheat Codes for Economy</h3></div>
+                <div class="article"><h3>AFK Players Beware: God's Inactivity Purge</h3></div>
+                <div class="article"><h3>Tall NPC Obstructs Main Quest View</h3></div>
+                <div class="article"><h3>Gamer's Girlfriend Inquires About Dark Lore</h3></div>
+                <div class="article"><h3>Local Wizard Claims Dementia</h3></div>
+                <div class="article"><h3>Romance Quest Fail: No Dragon Slaying</h3></div>
+                <div class="article"><h3>The Quest for The Ultimate Pizza Slice</h3></div>
+            </div>
         </section>
 
         <!-- game reviews & previews -->
